@@ -10,7 +10,6 @@
     "declaration": true,
     "isolatedModules": false,
     "esModuleInterop": true,
-    "declarationDir": "types",
     "allowSyntheticDefaultImports": true,
   }
 }
