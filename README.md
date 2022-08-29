@@ -5,7 +5,7 @@ remark plugin to support mermaid for browser use, helpful for react-markdown
 ## Install
 
 ```sh
-npm install remark-mermaid-plugin
+npm install @moevis/remark-mermaid-plugin
 ```
 
 
@@ -16,7 +16,7 @@ Our module `exampl.js` looks as follows:
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import rehypeStringify from "rehype-stringify";
-import remarkMermaidPlugin from 'remark-mermaid-plugin';
+import remarkMermaidPlugin from '@moevis/remark-mermaid-plugin';
 
 const markdownContent = `
     ```mermaid
