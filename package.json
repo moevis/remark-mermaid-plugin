@@ -1,6 +1,6 @@
 {
   "name": "@moevis/remark-mermaid-plugin",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "remark mermaidjs plugin",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,8 +14,9 @@
     }
   },
   "files": [
-    "src",
-    "dist"
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/index.mjs"
   ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --clean"
