@@ -1,9 +1,15 @@
 {
-  "name": "remark-mermaid-plugin",
-  "version": "1.0.2",
+  "name": "@moevis/remark-mermaid-plugin",
+  "version": "1.0.3",
   "description": "remark mermaidjs plugin",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
   "directories": {
     "lib": "lib"
   },
@@ -11,7 +17,8 @@
     "lib"
   ],
   "scripts": {
-    "build": "tsc"
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs/",
+    "build:mjs": "tsc --module es6 --outDir dist/mjs/"
   },
   "keywords": [
     "remark",
